@@ -21,6 +21,7 @@ namespace PoastSuite
             set => _Test = value;
         }
 
+        //Other Variables need to be here
         public static double G1x1 { get; set; }
         public static double G1x2 { get; set; }
         

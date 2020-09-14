@@ -31,6 +31,7 @@ namespace PoastSuite
         async private void NextIterationButton_Clicked(object sender, EventArgs e)
         {
             // DECLARATION OF VARIABLES AND ARRAYS USED for DPF PROJECT
+            // Restructure
             double[] Coef = new double[] { };
 
             double a;

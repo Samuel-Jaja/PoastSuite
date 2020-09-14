@@ -22,7 +22,7 @@ namespace PoastSuite
              _score = score;
              _g2x1 = g2x1;
              _g2x2 = g2x2;
-            Global.Test = "80";
+            Global.Test = "90";
             Userg2x1.Text = Global.Test;
             
         }
