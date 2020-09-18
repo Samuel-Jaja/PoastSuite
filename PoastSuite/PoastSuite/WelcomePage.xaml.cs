@@ -32,11 +32,47 @@ namespace PoastSuite
 
         private void WelcomeStartTechniqueButton_Clicked(object sender, EventArgs e)
         {
-            if (DfpCheckbox.IsChecked)
+
+            //POAST Suite 1.0 Navigation centre for its Developers 
+          
+            if (hookesandjeevesCheckbox.IsChecked)
+            { 
+                neldermeadcheckbox.IsChecked = false;
+                DfpCheckbox.IsChecked = false;
+                flectherandreevescheckbox.IsChecked = false;
+                Navigation.PushAsync(new MainPage());
+                //Kaycee please change MainPage to your very first page for HJ
+            }
+            else if (neldermeadcheckbox.IsChecked)
             {
+               
+                DfpCheckbox.IsChecked = false;
+                flectherandreevescheckbox.IsChecked = false;
+                hookesandjeevesCheckbox.IsChecked = false;
+                Navigation.PushAsync(new DfpPage6());
+                //Belem please change DfpPage6 to your very first page for NM
+            }
+            else if(DfpCheckbox.IsChecked)
+            {
+                neldermeadcheckbox.IsChecked = false;
+                flectherandreevescheckbox.IsChecked = false;
+                hookesandjeevesCheckbox.IsChecked = false;
+
                 Navigation.PushAsync(new DfpPage());
             }
-
+           
+            else if (flectherandreevescheckbox.IsChecked)
+            {
+                neldermeadcheckbox.IsChecked = false;
+                DfpCheckbox.IsChecked = false;
+                hookesandjeevesCheckbox.IsChecked = false;
+                Navigation.PushAsync(new MainPage());
+                //Iruoma please change MainPage to your very first page for FR
+            }
+            else
+            {
+                 DisplayAlert("Error selecting a Module", "Please check (tick) a box", "Ok", "Cancel");
+            }
         }
 
         private void Dfpcheckbox_CheckedChanged(object sender, CheckedChangedEventArgs e)

@@ -18,7 +18,7 @@
             <Label Text="QUESTION" HorizontalOptions="CenterAndExpand"
                        TextColor="Red" FontAttributes="Bold" FontSize="28"
                        />
-            <Label Text="Using the generic Model:" 
+            <!--<Label Text="Using the generic Model:" 
                    FontSize="15"
                    FontAttributes="Bold"
                    TextColor="Black"
@@ -27,7 +27,7 @@
                    FontSize="15"
                    FontAttributes="Bold"
                    TextColor="Black"
-                   HorizontalTextAlignment="Start"/>
+                   HorizontalTextAlignment="Start"/>-->
             <Label Text=" Solve by DFP Method: " 
                    FontSize="15"
                    FontAttributes="Bold"
@@ -54,19 +54,19 @@
                
 
                 <Label  Text="Gradient Vector [g1]" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center"  />
-                <Entry x:Name="Userg1x1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                <Entry x:Name="Userg1x2" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="Userg1x1"  Placeholder="Enter g1,1 from Matrix" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="Userg1x2"  Placeholder="Enter g1,2 from Matrix" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
 
                 <Label Text="Search Direction [S1]"  HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
-                <Entry x:Name="Users1x1"   Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                <Entry x:Name="Users1x2"   Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="Users1x1"  Placeholder="Enter S1,1 from Matrix"  Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="Users1x2" Placeholder="Enter S1,2 from Matrix"  Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
 
                 <Label  Text="Lambda [λ1]" HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
-                <Entry x:Name="UserL1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="UserL1" Placeholder="Enter λ1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
 
                 <Label Text="New Starting Point [X2]"  HorizontalOptions="Center" TextColor="Black" FontAttributes="Bold" FontSize="18" VerticalOptions="Center" />
-                <Entry x:Name="UserX2x1" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
-                <Entry x:Name="UserX2x2" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="UserX2x1" Placeholder="Enter X2,1 from Matrix" Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
+                <Entry x:Name="UserX2x2" Placeholder="Enter X2,2 from Matrix"  Margin="50,0,50,0" HorizontalTextAlignment="Center" Keyboard="Numeric"/>
 
                
 

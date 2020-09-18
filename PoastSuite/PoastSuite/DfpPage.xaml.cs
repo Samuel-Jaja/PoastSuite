@@ -14,6 +14,8 @@ namespace PoastSuite
     {
         public DfpPage()
         {
+            //This code enables to remove navigation bar property 
+            SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
         }
 

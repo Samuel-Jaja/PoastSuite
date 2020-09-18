@@ -13,21 +13,13 @@ namespace PoastSuite
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class DfpPage3 : ContentPage
     {
-        public DfpPage3( )
+        public DfpPage3()
         {
             InitializeComponent();
             //g1x1.Text = dfx1.ToString();
              
         }
-
-        double _mark8 = 0;
-        double _mark9 = 0;
-        public DfpPage3(double mark8, double mark9)
-        {
-            _mark8 = mark8;
-            _mark9 = mark9;
-        }
-        
+       
         async private void NextIterationButton_Clicked(object sender, EventArgs e)
         {
             // DECLARATION OF VARIABLES AND ARRAYS USED for DPF PROJECT
@@ -62,19 +54,19 @@ namespace PoastSuite
             double s2x2 = 0;
 
             //double G1x1 =0;
-           // double G1x2 =0;
-            double g2x1 =0;
-            double g2x2 =0;
+            // double G1x2 =0;
+            //double g2x1 =0;
+            // double g2x2 =0;
             double g3x1 =0;
             double g3x2 =0;
 
             double x2x1 = 0;
             double x2x2 = 0;
-            double x3x1 = 0;
-            double x3x2 = 0;
+           // double x3x1 = 0;
+           // double x3x2 = 0;
 
             double L1;
-            double L2;
+           // double L2;
 
             double[,] L1S1 = new double[,] { };
             double[,] L2S2 = new double[,] { };
@@ -191,7 +183,7 @@ namespace PoastSuite
                     //Console.WriteLine("Hence X3 =[{0},{1}] is the required minimum point and X3 is Optimal", Math.Round(Convert.ToDecimal(X3[0, 0]), 0), Math.Round(Convert.ToDecimal(X3[1, 0]), 0));
 
                     x2x1 = Math.Round(Convert.ToDouble(X2[0, 0]), 4);
-                    x2x2 = Math.Round(Convert.ToDouble(X2[1, 0]), 3);
+                    x2x2 = Math.Round(Convert.ToDouble(X2[1, 0]), 4);
 
                     X2 = new double[,]
                     {
@@ -200,19 +192,19 @@ namespace PoastSuite
                     };
 
                     //Partial Diff wrt x1
-                    g2x1 = (2 * a * X2[0, 0]) + (c * X2[1, 0]) + d;
+                    Global.G2x1 = (2 * a * X2[0, 0]) + (c * X2[1, 0]) + d;
                     //Partial Diff wrt x2
-                    g2x2 = (2 * b * X2[1, 0]) + (c * X2[0, 0]) + (2 * ee * X2[1, 0]);
+                    Global.G2x2 = (2 * b * X2[1, 0]) + (c * X2[0, 0]) + (2 * ee * X2[1, 0]);
 
                    
 
                     g2 = new double[,]
                     {
-                       {g2x1},
-                       {g2x2}
+                       { Global.G2x1},
+                       { Global.G2x2}
                     };
-                    g2x1 = Math.Round(Convert.ToDouble(g2[0, 0]), 4);
-                    g2x2 = Math.Round(Convert.ToDouble(g2[1, 0]), 4);
+                    Global.G2x1 = Math.Round(Convert.ToDouble(g2[0, 0]), 4);
+                    Global.G2x2 = Math.Round(Convert.ToDouble(g2[1, 0]), 4);
 
                     //Console.WriteLine("============Iteration [{0}]============", i);
                     //Console.WriteLine("X2 (Search Point X2):");
@@ -222,13 +214,13 @@ namespace PoastSuite
 
                     //Console.WriteLine("The gradient vector g2 are  df(x)/dx1 = {0}, where as df(x)/dx2 = {1},", Math.Round(Convert.ToDecimal(g2x1), 3), Math.Round(Convert.ToDecimal(g2x2), 3));
 
-                    Global.G1x1 = g2x1;
-                    Global.G1x2 = g2x2;
+                    Global.G1x1 = Global.G2x1;
+                    Global.G1x2 = Global.G2x2;
                 }
                 else if (i == 2)
                 {
                     //Algorithm e : Update H matrix as follows: Hi+1 = Hi + Ai + Bi
-                    L2 = 1.7058;
+                    Global.L2 = 1.7058;
 
                     q = new double[,]
                     {
@@ -280,7 +272,7 @@ namespace PoastSuite
                       {s2x2}
                     };
 
-                    L2S2 = ScalarMatrixMultiplication(S2, L2);
+                    L2S2 = ScalarMatrixMultiplication(S2, Global.L2);
 
                     //Initialization of X3
                     X3 = new double[,]
@@ -297,8 +289,8 @@ namespace PoastSuite
 
                     X3 = new double[,]
                     {
-                       {x3x1},
-                       {x3x2}
+                       {Global.X3x1},
+                       {Global.X3x2}
                     };
 
                     //Partial Diff wrt x1
@@ -343,134 +335,122 @@ namespace PoastSuite
             GradeData = new double[] { g1[0, 0], g1[1, 0], s1x1, s1x2, L1, X2[0, 0], X2[1, 0] };
 
             
-            double mark1;
+            
             bool isEntryEmptyMark1 = string.IsNullOrEmpty(Userg1x1.Text);
             if (isEntryEmptyMark1)
             {
-                mark1 = 0;
+               Global.Mark1 = 0;
             }
             else if (double.Parse(Userg1x1.Text) == GradeData[0])
             {
-                mark1 = 1;
+                Global.Mark1 = 1;
             }
             else
             {
-                mark1 = 0;
+                Global.Mark1 = 0;
             }
 
 
-            double mark2;
+            
             bool isEntryEmptyMark2 = string.IsNullOrEmpty(Userg1x2.Text);
             if (isEntryEmptyMark2)
             {
-                mark2 = 0;
+                Global.Mark2 = 0;
             }
             else if (double.Parse(Userg1x2.Text) == GradeData[1])
             {
-                mark2 = 1;
+                Global.Mark2 = 1;
+ 
             }
             else
             {
-                mark2 = 0;
+                Global.Mark2 = 0;
+ 
             }
+            
 
-
-            double mark3;
             bool isEntryEmptyMark3 = string.IsNullOrEmpty(Users1x1.Text);
             if (isEntryEmptyMark3)
             {
-                mark3 = 0;
+                Global.Mark3 = 0;
+ 
             }
             else if (double.Parse(Users1x1.Text) == GradeData[2])
             {
-                mark3 = 1;
+                Global.Mark3 = 1;
+
             }
             else
             {
-                mark3 = 0;
+                Global.Mark3 = 0;
+
             }
 
-
-
-            double mark4;
+            
             bool isEntryEmptyMark4 = string.IsNullOrEmpty(Users1x2.Text);
             if (isEntryEmptyMark4)
             {
-                mark4 = 0;
+                Global.Mark4 = 0;
             }
             else if (double.Parse(Users1x2.Text) == s1x2)
             {
-                mark4 = 1;
+                Global.Mark4 = 1;
+
             }
             else
             {
-                mark4 = 0;
+                Global.Mark4 = 0;
             }
 
-
-            double mark5;
+            
             bool isEntryEmptyMark5 = string.IsNullOrEmpty(UserL1.Text);
             if (isEntryEmptyMark5)
             {
-                mark5 = 0;
+                Global.Mark5 = 0;
             }
 
             //else if (L2 - double.Parse(UserL2.Text)<=0.005)
 
             else if (L1 - double.Parse(UserL1.Text) <= 0.100)
             {
-                mark5 = 1;
+                Global.Mark5 = 1;
             }
             else
             {
-                mark5 = 0;
+                Global.Mark5 = 0;
             }
 
-
-            double mark6;
+            
             bool isEntryEmptyMark6 = string.IsNullOrEmpty(UserX2x1.Text);
             if (isEntryEmptyMark6)
             {
-                mark6 = 0;
+                Global.Mark6 = 0;
             }
-            else if (double.Parse(UserX2x1.Text) == x2x1)
+            else if (x2x2 - double.Parse(UserX2x1.Text) <= x2x1)
             {
-                mark6 = 1;
+                Global.Mark6 = 1;
             }
             else
             {
-                mark6 = 0;
+                Global.Mark6 = 0;
             }
 
 
-            double mark7;
             bool isEntryEmptyMark7 = string.IsNullOrEmpty(UserX2x2.Text);
             if (isEntryEmptyMark7)
             {
-                mark7 = 0;
+                Global.Mark7 = 0;
             }
-            else if (double.Parse(UserX2x2.Text) == double.Parse(Global.Test)) //x2x2)
+            else if (x2x2 - double.Parse(UserX2x2.Text) <= 0.100)
             {
-                mark7 = 1;
+                Global.Mark7 = 1;
             }
             else
             {
-                mark7 = 0;
+                Global.Mark7 = 0;
             }
-            
 
-            double mark_iteration1 = mark1 + mark2 + mark3 + mark4 + mark5 + mark6 + mark7 + _mark8 + _mark9 ;
-            double markscore = mark_iteration1 / 9;
-
-
-            double score = Math.Round(markscore * 100);
-            // string percent = "%";
-            //g1x1.Text = dfx1.ToString();
-            //UserScore.Text = score.ToString();
-            //UserScore.Text = percent;
-
-
-            await Navigation.PushAsync(new DfpPage4(score, g2x1,g2x2));
+            await Navigation.PushAsync(new DfpPage4());
         }
 
         async private void BackButtonIterationOnePage_Clicked(object sender, EventArgs e)

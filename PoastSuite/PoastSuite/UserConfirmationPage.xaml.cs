@@ -12,6 +12,9 @@ namespace PoastSuite
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserConfirmationPage : ContentPage
     {
+        public UserConfirmationPage()
+        {
+        }
 
         public UserConfirmationPage( string parameterusername, string parametermatno)
         {
