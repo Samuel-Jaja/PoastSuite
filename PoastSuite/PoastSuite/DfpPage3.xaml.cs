@@ -24,7 +24,7 @@ namespace PoastSuite
         {
             // DECLARATION OF VARIABLES AND ARRAYS USED for DPF PROJECT
             // Restructure
-            double[] Coef = new double[] { };
+            double[] Coef = new double[] {};
 
             double a;
             double b;
@@ -50,8 +50,8 @@ namespace PoastSuite
 
             double s1x1 = 0;
             double s1x2 = 0;
-            double s2x1 = 0;
-            double s2x2 = 0;
+           // double s2x1 = 0;
+            //double s2x2 = 0;
 
             //double G1x1 =0;
             // double G1x2 =0;
@@ -231,11 +231,23 @@ namespace PoastSuite
                     q[0, 0] = g2[0, 0] - g1[0, 0];
                     q[1, 0] = g2[1, 0] - g1[1, 0];
 
+                    Global.Q1q1 = Math.Round(Convert.ToDouble(q[0, 0]), 4);
+                    Global.Q2q2 = Math.Round(Convert.ToDouble(q[1, 0]), 4);
+
+
                     //Evaluation to obtain A1
                     Si_SiT = MatrixMultiplication(S1, TransposeMatrix(S1));   //Si*Si'
                     SiT_qi = MatrixMultiplication(TransposeMatrix(S1), q);    //Si'*qi
                     invSiT_qi = 1 / SiT_qi[0, 0];
                     A1 = ScalarMatrixMultiplication(Si_SiT, invSiT_qi);
+
+                    //A1 pass to Global class for grading purpose
+                    Global.A1_1 = Math.Round(Convert.ToDouble(A1[0, 0]), 4);
+                    Global.A1_2 = Math.Round(Convert.ToDouble(A1[0, 1]), 4);
+                    Global.A2_1 = Math.Round(Convert.ToDouble(A1[1, 0]), 4);
+                    Global.A2_1 = Math.Round(Convert.ToDouble(A1[1, 1]), 4);
+                   
+                     
                     //double[,] Aa = ScalarMatrixMultiplication(A, L2);   //ASK PROF
 
                     //Evaluation to obtain B1
@@ -246,6 +258,13 @@ namespace PoastSuite
                     qiT_Hi_qi = MatrixMultiplication(TransposeMatrix(q), Hq);  //q'*(Hq)
                     inv_qiT_Hi_qi = -1 / qiT_Hi_qi[0, 0];
                     B1 = ScalarMatrixMultiplication(Hq_HqT, inv_qiT_Hi_qi);
+
+                    //B1 pass to Global class for grading purpose
+                    Global.B1_1 = Math.Round(Convert.ToDouble(B1[0, 0]), 4);
+                    Global.B1_2 = Math.Round(Convert.ToDouble(B1[0, 1]), 4);
+                    Global.B2_1 = Math.Round(Convert.ToDouble(B1[1, 0]), 4);
+                    Global.B2_1 = Math.Round(Convert.ToDouble(B1[1, 1]), 4);
+
 
                     //Initialization of H2
                     H2 = new double[,]
@@ -260,16 +279,24 @@ namespace PoastSuite
                     H2[1, 0] = H1[1, 0] + A1[1, 0] + B1[1, 0];
                     H2[1, 1] = H1[1, 1] + A1[1, 1] + B1[1, 1];
 
+                    //H2 pass to Global class for grading purpose
+                    Global.H2_11 = Math.Round(Convert.ToDouble(H2[0, 0]), 4);
+                    Global.H2_12 = Math.Round(Convert.ToDouble(H2[0, 1]), 4);
+                    Global.H2_21 = Math.Round(Convert.ToDouble(H2[1, 0]), 4);
+                    Global.H2_22 = Math.Round(Convert.ToDouble(H2[1, 1]), 4);
+
                     S2 = MatrixMultiplication(H2, g2);
                     S2 = ScalarMatrixMultiplication(S2, -1);
 
-                    s2x1 = S2[0, 0];
-                    s2x2 = S2[1, 0];
+                    Global.S2x1 = Math.Round(Convert.ToDouble(S2[0, 0]), 4);
+                    Global.S2x2 = Math.Round(Convert.ToDouble(S2[1, 0]), 4);
+
+                    
 
                     S2 = new double[,]
                     {
-                      {s2x1},
-                      {s2x2}
+                      {Global.S2x1},
+                      {Global.S2x2}
                     };
 
                     L2S2 = ScalarMatrixMultiplication(S2, Global.L2);
@@ -284,8 +311,8 @@ namespace PoastSuite
                     X3[0, 0] = X2[0, 0] + L2S2[0, 0];
                     X3[1, 0] = X2[1, 0] + L2S2[1, 0];
 
-                    //x3x1 = Math.Round(Convert.ToDouble(X3[0, 0]), 4);
-                    //x3x2 = Math.Round(Convert.ToDouble(X3[1, 0]), 3);
+                    Global.X3x1 = Math.Round(Convert.ToDouble(X3[0, 0]), 4);
+                    Global.X3x2 = Math.Round(Convert.ToDouble(X3[1, 0]), 4);
 
                     X3 = new double[,]
                     {
@@ -298,10 +325,13 @@ namespace PoastSuite
                     //Partial Diff wrt x2
                     g3x2 = (2 * b * X3[1, 0]) + (c * X3[0, 0]) + (2 * ee * X3[1, 0]);
 
+                    Global.G3x1 = Math.Round(Convert.ToDouble(g3x1), 4);
+                    Global.G3x2 = Math.Round(Convert.ToDouble(g3x2), 4);
+
                     g3 = new double[,]
                     {
-                       {g3x1},
-                       {g3x2}
+                       {Global.G3x1},
+                       {Global.G3x2}
                     };
 
                     //Console.WriteLine();
@@ -341,7 +371,7 @@ namespace PoastSuite
             {
                Global.Mark1 = 0;
             }
-            else if (double.Parse(Userg1x1.Text) == GradeData[0])
+            else if (GradeData[0] - double.Parse(Userg1x1.Text) <= 0.100)
             {
                 Global.Mark1 = 1;
             }
@@ -357,15 +387,13 @@ namespace PoastSuite
             {
                 Global.Mark2 = 0;
             }
-            else if (double.Parse(Userg1x2.Text) == GradeData[1])
+            else if (GradeData[1] -  double.Parse(Userg1x2.Text) <= 0.100)
             {
                 Global.Mark2 = 1;
- 
             }
             else
             {
                 Global.Mark2 = 0;
- 
             }
             
 
@@ -373,17 +401,14 @@ namespace PoastSuite
             if (isEntryEmptyMark3)
             {
                 Global.Mark3 = 0;
- 
             }
-            else if (double.Parse(Users1x1.Text) == GradeData[2])
+            else if (GradeData[2] - double.Parse(Users1x1.Text) <= 0.100)
             {
                 Global.Mark3 = 1;
-
             }
             else
             {
                 Global.Mark3 = 0;
-
             }
 
             
@@ -392,10 +417,9 @@ namespace PoastSuite
             {
                 Global.Mark4 = 0;
             }
-            else if (double.Parse(Users1x2.Text) == s1x2)
+            else if (s1x2 - double.Parse(Users1x2.Text) <= 0.100)
             {
                 Global.Mark4 = 1;
-
             }
             else
             {
@@ -408,9 +432,6 @@ namespace PoastSuite
             {
                 Global.Mark5 = 0;
             }
-
-            //else if (L2 - double.Parse(UserL2.Text)<=0.005)
-
             else if (L1 - double.Parse(UserL1.Text) <= 0.100)
             {
                 Global.Mark5 = 1;
@@ -426,7 +447,7 @@ namespace PoastSuite
             {
                 Global.Mark6 = 0;
             }
-            else if (x2x2 - double.Parse(UserX2x1.Text) <= x2x1)
+            else if (x2x1 - double.Parse(UserX2x2.Text) <= 0.100) 
             {
                 Global.Mark6 = 1;
             }

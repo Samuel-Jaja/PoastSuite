@@ -17,8 +17,6 @@ namespace PoastSuite
         public RegistrationPage()
         {
             InitializeComponent();
-            Global.Test = "1234";
-            Entrymatricno.Text = Global.Test;
         }
 
        async private void RegisterSignInButton_Clicked(object sender, EventArgs e)

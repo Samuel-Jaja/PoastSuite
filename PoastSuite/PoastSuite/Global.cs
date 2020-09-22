@@ -13,6 +13,7 @@ namespace PoastSuite
 
         }
 
+        
         private static string _Test { get; set; }
 
         public static string Test
@@ -20,18 +21,48 @@ namespace PoastSuite
             get => _Test;
             set => _Test = value;
         }
+        
 
         //Other Variables need to be here
         public static double G1x1 { get; set; }
         public static double G1x2 { get; set; }
 
+        public static double Q1q1 { get; set; }
+        public static double Q2q2 { get; set; }
+
+        public static double A1_1 { get; set; }
+        public static double A1_2{ get; set; }
+        public static double A2_1 { get; set; }
+        public static double A2_2 { get; set; }
+
+        public static double B1_1 { get; set; }
+        public static double B1_2 { get; set; }
+        public static double B2_1 { get; set; }
+        public static double B2_2 { get; set; }
+
+        public static double H2_11 { get; set; }
+        public static double H2_12 { get; set; }
+        public static double H2_21 { get; set; }
+        public static double H2_22 { get; set; }
+
+
+
         public static double G2x1 { get; set; }
         public static double G2x2 { get; set; }
+        public static double S2x1 { get; set; }
+        public static double S2x2 { get; set; }
+        public static double L2 { get; set; }
         public static double X3x1 { get; set; }
         public static double X3x2 { get; set; }
+        public static double G3x1 { get; set; }
+        public static double G3x2 { get; set; }
 
-        public static double L2 { get; set; }
-        
+
+
+
+
+
+        //Mark Variables to hold 1 point for each correct input
         public static double Mark1 { get; set; }
         public static double Mark2 { get; set; }
         public static double Mark3 { get; set; }

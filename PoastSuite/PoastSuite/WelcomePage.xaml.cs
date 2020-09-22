@@ -37,26 +37,26 @@ namespace PoastSuite
           
             if (hookesandjeevesCheckbox.IsChecked)
             { 
-                neldermeadcheckbox.IsChecked = false;
-                DfpCheckbox.IsChecked = false;
-                flectherandreevescheckbox.IsChecked = false;
+                neldermeadcheckbox.IsEnabled = false;
+                DfpCheckbox.IsEnabled = false;
+                flectherandreevescheckbox.IsEnabled = false;
                 Navigation.PushAsync(new MainPage());
                 //Kaycee please change MainPage to your very first page for HJ
             }
             else if (neldermeadcheckbox.IsChecked)
             {
                
-                DfpCheckbox.IsChecked = false;
-                flectherandreevescheckbox.IsChecked = false;
-                hookesandjeevesCheckbox.IsChecked = false;
+                DfpCheckbox.IsEnabled = false;
+                flectherandreevescheckbox.IsEnabled = false;
+                hookesandjeevesCheckbox.IsEnabled = false;
                 Navigation.PushAsync(new DfpPage6());
                 //Belem please change DfpPage6 to your very first page for NM
-            }
+            } 
             else if(DfpCheckbox.IsChecked)
             {
-                neldermeadcheckbox.IsChecked = false;
-                flectherandreevescheckbox.IsChecked = false;
-                hookesandjeevesCheckbox.IsChecked = false;
+                neldermeadcheckbox.IsEnabled = false;
+                flectherandreevescheckbox.IsEnabled = false;
+                hookesandjeevesCheckbox.IsEnabled = false;
 
                 Navigation.PushAsync(new DfpPage());
             }

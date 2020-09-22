@@ -17,21 +17,11 @@ namespace PoastSuite
         public DfpPage4()
         {
             InitializeComponent();
-            
-        }
-
-        private void NextIterationButton_Clicked(object sender, EventArgs e)
-        {
-
         }
 
         async private void Next2ndIterationButton_Clicked(object sender, EventArgs e)
         {
-            ////===================================CODE TO GRADE THE USER======================================
-            ////GradeData = new double[] { g1[0, 0], g1[1, 0], s1x1, s1x2, L1, X2[0, 0], X2[1, 0] };
-
-
-            //GradeData = new double[] { g2[0, 0], g2[1, 0], s2x1, s2x2, L2, X3[0, 0], X3[1, 0] };
+           //===================================CODE TO GRADE Iteration 2=======================================
 
             bool isEntryEmptyMark8 = string.IsNullOrEmpty(Userg2x1.Text);
             if (isEntryEmptyMark8)
@@ -67,7 +57,7 @@ namespace PoastSuite
             {
                 Global.Mark10 = 0;
             }
-            else if (Global.L2 - double.Parse(Userq1x1.Text) <= 0.100)
+            else if (Global.Q1q1 - double.Parse(Userq1x1.Text) <= 0.100)
             {
                 Global.Mark10 = 1;
             }
@@ -81,7 +71,7 @@ namespace PoastSuite
             {
                 Global.Mark11 = 0;
             }
-            else if (Global.L2 - double.Parse(Userq1x2.Text) <= 0.100)
+            else if (Global.Q2q2 - double.Parse(Userq1x2.Text) <= 0.100)
             {
                 Global.Mark11 = 1;
             }
@@ -97,7 +87,7 @@ namespace PoastSuite
             {
                 Global.Mark12 = 0;
             }
-            else if (Global.L2 - double.Parse(Usera11.Text) <= 0.100)
+            else if (Global.A1_1 - double.Parse(Usera11.Text) <= 0.100)
             {
                 Global.Mark12 = 1;
             }
@@ -112,7 +102,7 @@ namespace PoastSuite
             {
                 Global.Mark13 = 0;
             }
-            else if (Global.L2 - double.Parse(Usera12.Text) <= 0.100)
+            else if (Global.A1_2 - double.Parse(Usera12.Text) <= 0.100)
             {
                 Global.Mark13 = 1;
             }
@@ -124,9 +114,9 @@ namespace PoastSuite
             bool isEntryEmptyMark14 = string.IsNullOrEmpty(Usera21.Text);
             if (isEntryEmptyMark14)
             {
-                Global.Mark14 = 0;
+                Global.Mark14 = 0;   //NOT SEEN TO GRADE
             }
-            else if (Global.L2 - double.Parse(Usera21.Text) <= 0.100)
+            else if (Global.A2_1 - double.Parse(Usera21.Text) <= 0.100)
             {
                 Global.Mark14 = 1;
             }
@@ -141,7 +131,7 @@ namespace PoastSuite
             {
                 Global.Mark15 = 0;
             }
-            else if (Global.L2 - double.Parse(Usera22.Text) <= 0.100)
+            else if (Global.A2_2 - double.Parse(Usera22.Text) <= 0.100)
             {
                 Global.Mark15 = 1;
             }
@@ -159,7 +149,7 @@ namespace PoastSuite
             {
                 Global.Mark16 = 0;
             }
-            else if (Global.L2 - double.Parse(Userb11.Text) <= 0.100)
+            else if (Global.B1_1 - double.Parse(Userb11.Text) <= 0.100)
             {
                 Global.Mark16 = 1;
             }
@@ -174,7 +164,7 @@ namespace PoastSuite
             {
                 Global.Mark17 = 0;
             }
-            else if (Global.L2 - double.Parse(Userb12.Text) <= 0.100)
+            else if (Global.B1_2 - double.Parse(Userb12.Text) <= 0.100)
             {
                 Global.Mark17 = 1;
             }
@@ -188,7 +178,7 @@ namespace PoastSuite
             {
                 Global.Mark18 = 0;
             }
-            else if (Global.L2 - double.Parse(Userb21.Text) <= 0.100)
+            else if (Global.B2_1 - double.Parse(Userb21.Text) <= 0.100)
             {
                 Global.Mark18 = 1;
             }
@@ -203,7 +193,7 @@ namespace PoastSuite
             {
                 Global.Mark19 = 0;
             }
-            else if (Global.L2 - double.Parse(Userb22.Text) <= 0.100)
+            else if (Global.B2_2 - double.Parse(Userb22.Text) <= 0.100)
             {
                 Global.Mark19 = 1;
             }
@@ -219,7 +209,7 @@ namespace PoastSuite
             {
                 Global.Mark20 = 0;
             }
-            else if (Global.L2 - double.Parse(UserH2_11.Text) <= 0.100)
+            else if (Global.H2_11 - double.Parse(UserH2_11.Text) <= 0.100)
             {
                 Global.Mark20 = 1;
             }
@@ -234,7 +224,7 @@ namespace PoastSuite
             {
                 Global.Mark21 = 0;
             }
-            else if (Global.L2 - double.Parse(UserH2_12.Text) <= 0.100)
+            else if (Global.H2_12 - double.Parse(UserH2_12.Text) <= 0.100)
             {
                 Global.Mark21 = 1;
             }
@@ -248,7 +238,7 @@ namespace PoastSuite
             {
                 Global.Mark22 = 0;
             }
-            else if (Global.L2 - double.Parse(UserH2_21.Text) <= 0.100)
+            else if (Global.H2_21 - double.Parse(UserH2_21.Text) <= 0.100)
             {
                 Global.Mark22 = 1;
             }
@@ -263,7 +253,7 @@ namespace PoastSuite
             {
                 Global.Mark23 = 0;
             }
-            else if (Global.L2 - double.Parse(UserH2_22.Text) <= 0.100)
+            else if (Global.H2_22 - double.Parse(UserH2_22.Text) <= 0.100)
             {
                 Global.Mark23 = 1;
             }
