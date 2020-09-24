@@ -245,7 +245,7 @@ namespace PoastSuite
                     Global.A1_1 = Math.Round(Convert.ToDouble(A1[0, 0]), 4);
                     Global.A1_2 = Math.Round(Convert.ToDouble(A1[0, 1]), 4);
                     Global.A2_1 = Math.Round(Convert.ToDouble(A1[1, 0]), 4);
-                    Global.A2_1 = Math.Round(Convert.ToDouble(A1[1, 1]), 4);
+                    Global.A2_2 = Math.Round(Convert.ToDouble(A1[1, 1]), 4);
                    
                      
                     //double[,] Aa = ScalarMatrixMultiplication(A, L2);   //ASK PROF
@@ -263,7 +263,7 @@ namespace PoastSuite
                     Global.B1_1 = Math.Round(Convert.ToDouble(B1[0, 0]), 4);
                     Global.B1_2 = Math.Round(Convert.ToDouble(B1[0, 1]), 4);
                     Global.B2_1 = Math.Round(Convert.ToDouble(B1[1, 0]), 4);
-                    Global.B2_1 = Math.Round(Convert.ToDouble(B1[1, 1]), 4);
+                    Global.B2_2 = Math.Round(Convert.ToDouble(B1[1, 1]), 4);
 
 
                     //Initialization of H2
