@@ -70,8 +70,9 @@ namespace PoastSuite
             {
                 Global.Mark27 = 0;
             }
-            else if (Global.X3x1 - double.Parse(UserX3x1.Text) <= 0.100)
+            else if (Global.X3x1 - double.Parse(UserX3x1.Text) == 0.000)
             {
+               
                 Global.Mark27 = 1;
             }
             else
@@ -85,7 +86,7 @@ namespace PoastSuite
             {
                 Global.Mark28 = 0;
             }
-            else if (Global.X3x2 - double.Parse(UserX3x2.Text) <= 0.100)
+            else if (Global.X3x2 - double.Parse(UserX3x2.Text) == 0.000)
             {
                 Global.Mark28 = 1;
             }
@@ -99,7 +100,7 @@ namespace PoastSuite
             {
                 Global.Mark29 = 0;
             }
-            else if (Global.G3x1 - double.Parse(Userg3x1.Text) <= 0.100)
+            else if (Global.G3x1 - double.Parse(Userg3x1.Text) == 0.000)
             {
                 Global.Mark29 = 1;
             }
@@ -114,7 +115,7 @@ namespace PoastSuite
             {
                 Global.Mark30 = 0;
             }
-            else if (Global.G3x2 - double.Parse(Userg3x2.Text) <= 0.100)
+            else if ((Global.G3x2 - double.Parse(Userg3x2.Text)) == 0.000)
             {
                 Global.Mark30 = 1;
             }

@@ -17,6 +17,7 @@ namespace PoastSuite
         {
             SetValue(NavigationPage.HasNavigationBarProperty, false);
             InitializeComponent();
+           
         }
 
         async private void ContinueButton_Clicked(object sender, EventArgs e)
@@ -28,5 +29,6 @@ namespace PoastSuite
         {
             System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
+        
     }
 }

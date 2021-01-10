@@ -153,12 +153,11 @@ namespace PoastSuite
 
             //x2x2 = (double)Math.Round(Convert.ToDecimal(X2[1, 0]), 4);
             //Step c: 
-            L1 = -((-48 * a) + (-48 * b) + (48 * c) + (12 * c) + (12 * d)) / ((288 * a) + (72 * b) - (144 * c));
+            L1 = -(2 * (a * X1[0, 0] * S1[0, 0]) + 2 * (b * X1[1, 0] * S1[1, 0]) + c * X1[0, 0] * S1[1, 0] + c * X1[1, 0] * S1[0, 0] + d * S1[0, 0]) / ((2 * (a * S1[0, 0] * S1[0, 0]) + (2 * (b * S1[1, 0] * S1[1, 0]) + (2 * (c * S1[0, 0] * S1[1, 0])))));
             L1 = Math.Round(Convert.ToDouble(L1), 4);
 
 
             // L2 = -((-0.9490 * a) + (-3.237 * b) + (1.1074 * c) + (0.6935 * c) + (0.7241 * d)) / ((0.1925 * a) + (1.0486 * b) - (0.4492 * c));
-
 
             // Also solve for L2 in this nature
 
@@ -220,7 +219,7 @@ namespace PoastSuite
                 else if (i == 2)
                 {
                     //Algorithm e : Update H matrix as follows: Hi+1 = Hi + Ai + Bi
-                    Global.L2 = 1.7058;
+                    //Global.L2 = 1.7058;
 
                     q = new double[,]
                     {
@@ -298,6 +297,8 @@ namespace PoastSuite
                       {Global.S2x1},
                       {Global.S2x2}
                     };
+
+                    Global.L2 = -(2 * (a * X2[0, 0] * S2[0, 0]) + 2 * (b * X2[1, 0] * S2[1, 0]) + c * X2[0, 0] * S2[1, 0] + c * X2[1, 0] * S2[0, 0] + d * S2[0, 0]) / ((2 * (a * S2[0, 0] * S2[0, 0]) + (2 * (b * S2[1, 0] * S2[1, 0]) + (2 * (c * S2[0, 0] * S2[1, 0])))));
 
                     L2S2 = ScalarMatrixMultiplication(S2, Global.L2);
 

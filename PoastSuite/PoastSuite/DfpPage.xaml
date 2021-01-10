@@ -7,11 +7,6 @@
              x:Class="PoastSuite.DfpPage">
     
     <ContentPage.Content>
-        
-        
-        
-        
-
             <StackLayout  BackgroundColor="Black">
             <StackLayout BackgroundColor="Black">
                 <Label Text="POAST Suite 1.0                               DFP MODULE" HorizontalOptions="CenterAndExpand" 
