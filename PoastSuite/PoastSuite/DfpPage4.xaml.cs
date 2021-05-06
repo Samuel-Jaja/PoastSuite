@@ -14,256 +14,279 @@ namespace PoastSuite
     public partial class DfpPage4 : ContentPage
     {
         
-        public DfpPage4()
+        private double p;
+        
+        public DfpPage4(double marks)
         {
+            p = marks;
             InitializeComponent();
         }
 
         async private void Next2ndIterationButton_Clicked(object sender, EventArgs e)
         {
-           //===================================CODE TO GRADE Iteration 2=======================================
-
+            var dfpParameter1 = new DfpParameter1(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.0001);
+            //===================================CODE TO GRADE Iteration 2=======================================
+            
+            int m8;
             bool isEntryEmptyMark8 = string.IsNullOrEmpty(Userg2x1.Text);
             if (isEntryEmptyMark8)
             {
-                Global.Mark8 = 0;
+                m8 = 0;
             }
-            else if (Global.G2x1 - double.Parse(Userg2x1.Text) <= 0.100)
+            else if (dfpParameter1.g2x1 - double.Parse(Userg2x1.Text) <= 0.100)
             {
-                Global.Mark8 = 1;
+                m8 = 1;
             }
             else
             {
-                Global.Mark8 = 0;
+                m8 = 0;
             }
 
+            
+
+            int m9;
             bool isEntryEmptyMark9 = string.IsNullOrEmpty(Userg2x2 .Text);
             if (isEntryEmptyMark9)
             {
-                Global.Mark9 = 0;
+                m9 = 0;
             }
-            else if (Global.G2x2 - double.Parse(Userg2x2 .Text) <= 0.100)
+            else if (dfpParameter1.g2x2 - double.Parse(Userg2x2 .Text) <= 0.100)
             {
-                Global.Mark9 = 1;
+                m9 = 1;
             }
             else
             {
-                Global.Mark9 = 0;
+                m9 = 0;
             }
 
-
+           
+            int m10;
             bool isEntryEmptyMark10 = string.IsNullOrEmpty(Userq1x1.Text);
             if (isEntryEmptyMark10)
             {
-                Global.Mark10 = 0;
+                m10 = 0;
             }
-            else if (Global.Q1q1 - double.Parse(Userq1x1.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Userq1x1.Text) <= 0.100) ///
             {
-                Global.Mark10 = 1;
+                m10 = 1;
             }
             else
             {
-                Global.Mark10 = 0;
+                m10 = 0;
             }
 
+            int m11;
             bool isEntryEmptyMark11 = string.IsNullOrEmpty(Userq1x2.Text);
             if (isEntryEmptyMark11)
             {
-                Global.Mark11 = 0;
+                m11 = 0;
             }
-            else if (Global.Q2q2 - double.Parse(Userq1x2.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Userq1x2.Text) <= 0.100)///
             {
-                Global.Mark11 = 1;
+                m11 = 1;
             }
             else
             {
-                Global.Mark11 = 0;
+                m11 = 0;
             }
 
             //GRADING OF A1
 
+            int m12;
             bool isEntryEmptyMark12 = string.IsNullOrEmpty(Usera11 .Text);
             if (isEntryEmptyMark12)
             {
-                Global.Mark12 = 0;
+               m12 = 0;
             }
-            else if (Global.A1_1 - double.Parse(Usera11.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Usera11.Text) <= 0.100)///
             {
-                Global.Mark12 = 1;
+                m12 = 1;
             }
             else
             {
-                Global.Mark12 = 0;
+                m12 = 0;
             }
 
-
+            int m13;
             bool isEntryEmptyMark13 = string.IsNullOrEmpty(Usera12.Text);
             if (isEntryEmptyMark13)
             {
-                Global.Mark13 = 0;
+               m13 = 0;
             }
-            else if (Global.A1_2 - double.Parse(Usera12.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Usera12.Text) <= 0.100)
             {
-                Global.Mark13 = 1;
+                m13 = 1;
             }
             else
             {
-                Global.Mark13 = 0;
+                m13 = 0;
             }
 
+            int m14;
             bool isEntryEmptyMark14 = string.IsNullOrEmpty(Usera21.Text);
             if (isEntryEmptyMark14)
             {
-                Global.Mark14 = 0;   //NOT SEEN TO GRADE
+               m14 = 0;   //NOT SEEN TO GRADE
             }
-            else if (Global.A2_1 - double.Parse(Usera21.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Usera21.Text) <= 0.100)
             {
-                Global.Mark14 = 1;
+                m14 = 1;
             }
             else
             {
-                Global.Mark14 = 0;
+                m14 = 0;
             }
 
-
+            int m15;
             bool isEntryEmptyMark15 = string.IsNullOrEmpty(Usera22.Text);
             if (isEntryEmptyMark15)
             {
-                Global.Mark15 = 0;
+                m15 = 0;
             }
-            else if (Global.A2_2 - double.Parse(Usera22.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Usera22.Text) <= 0.100)
             {
-                Global.Mark15 = 1;
+                m15 = 1;
             }
             else
             {
-                Global.Mark15 = 0;
+                m15 = 0;
             }
 
 
 
             //GRADING OF B1
 
+            int m16;
             bool isEntryEmptyMark16 = string.IsNullOrEmpty(Userb11.Text);
             if (isEntryEmptyMark16)
             {
-                Global.Mark16 = 0;
+                m16 = 0;
             }
-            else if (Global.B1_1 - double.Parse(Userb11.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Userb11.Text) <= 0.100)
             {
-                Global.Mark16 = 1;
+                m16 = 1;
             }
             else
             {
-                Global.Mark16 = 0;
+                m16 = 0;
             }
 
-
+            int m17;
             bool isEntryEmptyMark17 = string.IsNullOrEmpty(Userb12.Text);
             if (isEntryEmptyMark17)
             {
-                Global.Mark17 = 0;
+                m17 = 0;
             }
-            else if (Global.B1_2 - double.Parse(Userb12.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Userb12.Text) <= 0.100)
             {
-                Global.Mark17 = 1;
+                m17 = 1;
             }
             else
             {
-                Global.Mark17 = 0;
+                m17 = 0;
             }
 
+            int m18;
             bool isEntryEmptyMark18 = string.IsNullOrEmpty(Userb21.Text);
             if (isEntryEmptyMark18)
             {
-                Global.Mark18 = 0;
+                m18 = 0;
             }
-            else if (Global.B2_1 - double.Parse(Userb21.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Userb21.Text) <= 0.100)
             {
-                Global.Mark18 = 1;
+                m18 = 1;
             }
             else
             {
-                Global.Mark18 = 0;
+                m18 = 0;
             }
 
-
+            int m19;
             bool isEntryEmptyMark19 = string.IsNullOrEmpty(Userb22.Text);
             if (isEntryEmptyMark19)
             {
-                Global.Mark19 = 0;
+                m19 = 0;
             }
-            else if (Global.B2_2 - double.Parse(Userb22.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(Userb22.Text) <= 0.100)
             {
-                Global.Mark19 = 1;
+                m19 = 1;
             }
             else
             {
-                Global.Mark19 = 0;
+                m19 = 0;
             }
 
             //GRADING OF H2
 
+            int m20;
             bool isEntryEmptyMark20 = string.IsNullOrEmpty(UserH2_11 .Text);
             if (isEntryEmptyMark20)
             {
-                Global.Mark20 = 0;
+                m20 = 0;
             }
-            else if (Global.H2_11 - double.Parse(UserH2_11.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(UserH2_11.Text) <= 0.100)
             {
-                Global.Mark20 = 1;
+                m20 = 1;
             }
             else
             {
-                Global.Mark20 = 0;
+                m20 = 0;
             }
 
-
+            int m21;
             bool isEntryEmptyMark21 = string.IsNullOrEmpty(UserH2_12.Text);
             if (isEntryEmptyMark21)
             {
-                Global.Mark21 = 0;
+                m21 = 0;
             }
-            else if (Global.H2_12 - double.Parse(UserH2_12.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(UserH2_12.Text) <= 0.100)
             {
-                Global.Mark21 = 1;
+                m21 = 1;
             }
             else
             {
-                Global.Mark21 = 0;
+                m21 = 0;
             }
 
+            int m22;
             bool isEntryEmptyMark22 = string.IsNullOrEmpty(UserH2_21.Text);
             if (isEntryEmptyMark22)
             {
-                Global.Mark22 = 0;
+                m22 = 0;
             }
-            else if (Global.H2_21 - double.Parse(UserH2_21.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(UserH2_21.Text) <= 0.100)
             {
-                Global.Mark22 = 1;
+                m22 = 1;
             }
             else
             {
-                Global.Mark22 = 0;
+                m22 = 0;
             }
 
-
+            int m23;
             bool isEntryEmptyMark23 = string.IsNullOrEmpty(UserH2_22.Text);
             if (isEntryEmptyMark23)
             {
-                Global.Mark23 = 0;
+                m23 = 0;
             }
-            else if (Global.H2_22 - double.Parse(UserH2_22.Text) <= 0.100)
+            else if (dfpParameter1.a - double.Parse(UserH2_22.Text) <= 0.100)
             {
-                Global.Mark23 = 1;
+                m23 = 1;
             }
             else
             {
-                Global.Mark23 = 0;
+                m23 = 0;
             }
+            
 
 
-            await Navigation.PushAsync(new DfpPage5());
+            double marks2;
+            //marks2 = m8 + p;
+            marks2 = m8 + m9 + m10 + m11 + m12 + m13 + m14 + m15 + m16 + m17 + m18 + m19 + m20 + m21 + m22 + m23 + p;
+
+
+
+            await Navigation.PushAsync(new DfpPage5(marks2));
         }
 
        async private void BackButtonIterationTwoPage_Clicked(object sender, EventArgs e)

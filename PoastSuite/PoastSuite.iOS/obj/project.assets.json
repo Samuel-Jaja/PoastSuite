@@ -1444,11 +1444,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.iOS\\PoastSuite.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.iOS\\PoastSuite.iOS.csproj",
       "projectName": "PoastSuite.iOS",
-      "projectPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.iOS\\PoastSuite.iOS.csproj",
+      "projectPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.iOS\\PoastSuite.iOS.csproj",
       "packagesPath": "C:\\Users\\Samuel Jaja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1469,8 +1469,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj": {
-              "projectPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj"
+            "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj": {
+              "projectPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj"
             }
           }
         }

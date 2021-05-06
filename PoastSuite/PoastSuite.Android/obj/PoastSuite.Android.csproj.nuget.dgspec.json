@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj": {}
+    "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj": {
+    "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj",
         "projectName": "PoastSuite.Android",
-        "projectPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj",
+        "projectPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj",
         "packagesPath": "C:\\Users\\Samuel Jaja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.Android\\obj\\",
+        "outputPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj": {
-                "projectPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj"
+              "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj": {
+                "projectPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj"
               }
             }
           }
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj": {
+    "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj",
         "projectName": "PoastSuite",
-        "projectPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj",
+        "projectPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\PoastSuite.csproj",
         "packagesPath": "C:\\Users\\Samuel Jaja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite\\obj\\",
+        "outputPath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -127,7 +127,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

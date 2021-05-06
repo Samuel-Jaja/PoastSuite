@@ -22,3 +22,27 @@ C:\Users\Samuel Jaja\Documents\Visual Studio 2019\PoastSuite\PoastSuite\PoastSui
 C:\Users\Samuel Jaja\Documents\Visual Studio 2019\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage5.xaml.g.cs
 C:\Users\Samuel Jaja\Documents\Visual Studio 2019\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage6.xaml.g.cs
 C:\Users\Samuel Jaja\Documents\Visual Studio 2019\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.csprojAssemblyReference.cache
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.csprojAssemblyReference.cache
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage2.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage3.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage4.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage5.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\DfpPage6.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\LoginPage.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\RegistrationPage.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\UserConfirmationPage.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\WelcomePage.xaml.g.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.AssemblyInfoInputs.cache
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.AssemblyInfo.cs
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.csproj.CoreCompileInputs.cache
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.dll
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\ref\PoastSuite.dll
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\PoastSuite.pdb
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\bin\Debug\netstandard2.0\PoastSuite.deps.json
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\bin\Debug\netstandard2.0\PoastSuite.dll
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\bin\Debug\netstandard2.0\ref\PoastSuite.dll
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\bin\Debug\netstandard2.0\PoastSuite.pdb
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Debug\netstandard2.0\XamlC.stamp

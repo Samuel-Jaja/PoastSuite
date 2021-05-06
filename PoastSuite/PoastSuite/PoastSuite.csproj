@@ -48,4 +48,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DFPQ1\" />
+    <Folder Include="DFPQ2\" />
+  </ItemGroup>
 </Project>

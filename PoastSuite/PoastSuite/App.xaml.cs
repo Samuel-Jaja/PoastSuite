@@ -9,7 +9,7 @@ namespace PoastSuite
         public App()
         {
             InitializeComponent();
-            Global.Init();
+           // DfpParameter1.Init();
             MainPage = new NavigationPage(new MainPage());
             
         }

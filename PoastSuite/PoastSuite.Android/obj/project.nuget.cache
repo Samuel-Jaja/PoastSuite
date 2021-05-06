@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7dNojY1F1fqmoWY3gqavQMajvzjgNUePCcxqtncHeFJ+681H6jkYKzV40++a2eOw+CWa7P0OSBcyysH+JAnyxg==",
+  "dgSpecHash": "5tFbktuffk01j1uycqiXpg4jcp6wZnov9qwcUmXz7xyQX3sAI/+4asWiv1gT+/Pd58y3iAXx9lcDMh6ByV5vLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Samuel Jaja\\Documents\\Visual Studio 2019\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj",
+  "projectFilePath": "C:\\Users\\Samuel Jaja\\Desktop\\PoastSuite\\PoastSuite\\PoastSuite.Android\\PoastSuite.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samuel Jaja\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\Samuel Jaja\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
