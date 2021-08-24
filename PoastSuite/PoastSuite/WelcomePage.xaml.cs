@@ -49,7 +49,7 @@ namespace PoastSuite
                 DfpCheckbox.IsEnabled = false;
                 flectherandreevescheckbox.IsEnabled = false;
                 hookesandjeevesCheckbox.IsEnabled = false;
-                Navigation.PushAsync(new DfpPage6());
+                Navigation.PushAsync(new MainPage());
                 //Belem please change DfpPage6 to your very first page for NM
             } 
             else if(DfpCheckbox.IsChecked)

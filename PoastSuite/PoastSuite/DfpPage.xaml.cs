@@ -21,27 +21,13 @@ namespace PoastSuite
 
         async private void NextButtonSelectionQuestionPage_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DfpPage2());
-            //if (Question1CheckBox.IsChecked)
-            //{
-               
-            //}
-
+            await Navigation.PushAsync(new DfpQuestionSelection());
         }
 
         async private void BackButtonSelectQuestionPage_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new WelcomePage());
         }
-
-
-        //private void WelcomeStartTechniqueButton_Clicked(object sender, EventArgs e)
-        //{
-        //    if (DfpCheckbox.IsChecked)
-        //    {
-        //        Navigation.PushAsync(new DfpPage());
-        //    }
-
-        //}
+        
     }
 }

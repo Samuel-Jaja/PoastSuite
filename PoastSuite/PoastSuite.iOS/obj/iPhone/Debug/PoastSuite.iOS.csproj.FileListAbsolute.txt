@@ -126,9 +126,9 @@ C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Deb
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\optimized\
-C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\PoastSuite.iOS.csprojAssemblyReference.cache
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\PoastSuite.iOS.csproj.CoreCompileInputs.cache
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\XamlC.stamp
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\PoastSuite.iOS.csproj.CopyComplete
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\PoastSuite.iOS.exe
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\PoastSuite.iOS.pdb
+C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite.iOS\obj\iPhone\Debug\PoastSuite.iOS.csproj.AssemblyReference.cache
