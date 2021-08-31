@@ -3,6 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PoastSuite.Question_6.QuestionPage6">
     <ContentPage.Content>
+        <ScrollView>
+            
+       
         <StackLayout>
             <Frame Padding="90" BackgroundColor="Black" Margin="0,0,0,20">
                 <Label Text="DFP QUESTION 6" FontSize="36" FontAttributes="Bold"  TextColor="Yellow"
@@ -26,5 +29,6 @@
             <Button x:Name="solveButton" Text="solve" FontAttributes="Bold" FontSize="22" HeightRequest="70" Style="{StaticResource questionButton}"
                     Margin="30,30" Clicked="solveButton_Clicked"/>
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

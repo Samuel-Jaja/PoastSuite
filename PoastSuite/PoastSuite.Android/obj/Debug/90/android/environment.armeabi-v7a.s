@@ -23,8 +23,8 @@
 	.section	.rodata.env.str.1,"aMS",%progbits,1
 	.type	.L.env.str.1, %object
 .L.env.str.1:
-	.asciz	"com.companyname.poastsuite"
-	.size	.L.env.str.1, 27
+	.asciz	"POASTSuite1.x0"
+	.size	.L.env.str.1, 15
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -92,7 +92,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",%progbits,1
 	.type	.L.env.str.8, %object
 .L.env.str.8:
-	.asciz	"949a0ac2-e4af-4daf-b9cb-44df14a774d2"
+	.asciz	"518d1d59-d25e-4fea-b4d8-cb913de87f41"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",%progbits,1
 	.type	.L.env.str.9, %object

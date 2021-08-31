@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="PoastSuite.UserConfirmationPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="20">
             <Frame HeightRequest="100" BorderColor="Black">
                 <StackLayout>
@@ -33,5 +34,6 @@
 
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

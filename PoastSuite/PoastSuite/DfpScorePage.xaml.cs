@@ -21,7 +21,7 @@ namespace PoastSuite
         public DfpScorePage(double score)
         {
             InitializeComponent();
-            sCore = Math.Round(score, 2);
+            sCore = Math.Round(score);
             ShowMessage(sCore);
             GetScore();
         }
@@ -56,9 +56,9 @@ namespace PoastSuite
             await Navigation.PushModalAsync(new DfpQuestionSelection());
         }
 
-       async private void back_Clicked(object sender, EventArgs e)
+        private void back_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new WelcomePage());
+           // await Navigation.PushModalAsync(new WelcomePage());
         }
     }
 }

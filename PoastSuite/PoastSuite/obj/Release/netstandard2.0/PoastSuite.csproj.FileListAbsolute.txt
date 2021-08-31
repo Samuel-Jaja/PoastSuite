@@ -7,10 +7,6 @@ C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netsta
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpIterationPage1.xaml.g.cs
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpIterationPage2a.xaml.g.cs
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpPage.xaml.g.cs
-C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpPage3.xaml.g.cs
-C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpPage4.xaml.g.cs
-C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpPage5.xaml.g.cs
-C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpPage6.xaml.g.cs
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpQuestionSelection.xaml.g.cs
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\DfpScorePage.xaml.g.cs
 C:\Users\Samuel Jaja\Desktop\PoastSuite\PoastSuite\PoastSuite\obj\Release\netstandard2.0\LoginPage.xaml.g.cs

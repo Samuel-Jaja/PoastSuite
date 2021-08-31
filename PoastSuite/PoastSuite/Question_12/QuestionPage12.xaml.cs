@@ -16,7 +16,7 @@ namespace PoastSuite.Question_12
         public QuestionPage12()
         {
             InitializeComponent();
-            question12 = new DfpGradingCentre(-2, 4, 2, 0.5, -2, -3, 0, 0);
+            question12 = new DfpGradingCentre(-2, 4, 5, 0.7, -2, -3, 0, 0);
             functionDisplay.Text = question12.solution.writeFunction();
             xValue.Text = question12.solution.X1[0, 0].ToString();
             yValue.Text = question12.solution.X1[1, 0].ToString();

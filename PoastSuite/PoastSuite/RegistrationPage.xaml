@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="PoastSuite.RegistrationPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout >
             <Grid Margin="20,0,20,0" VerticalOptions="Center">
                 <Grid.RowDefinitions>
@@ -57,6 +58,7 @@
 
 
         </StackLayout>
+        </ScrollView>
 
     </ContentPage.Content>
 </ContentPage>

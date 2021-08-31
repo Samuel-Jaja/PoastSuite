@@ -7,6 +7,7 @@
              x:Class="PoastSuite.DfpPage">
     
     <ContentPage.Content>
+        <ScrollView>
             <StackLayout  BackgroundColor="Black">
             <StackLayout BackgroundColor="Black">
                 <Label Text="POAST Suite 1.0                               DFP MODULE" HorizontalOptions="CenterAndExpand" 
@@ -56,5 +57,6 @@
                 <Label Text="Developed by Samuel Jaja || Supervised by Prof A.O Kuye" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="White"  Margin="5"/>
 
             </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -54,7 +54,7 @@ namespace PoastSuite
         {
             try
             {
-                sCore = sCore + Question.Compare_Scores(h, double.Parse(Userg1x1.Text), double.Parse(Userg1x1.Text), double.Parse(Users1x1.Text), double.Parse(Users1x2.Text), double.Parse(UserL2.Text), double.Parse(UserX2x1.Text), double.Parse(UserX2x2.Text));
+                sCore = sCore + Question.Compare_Scores(h, double.Parse(Userg1x1.Text), double.Parse(Userg1x2.Text), double.Parse(Users1x1.Text), double.Parse(Users1x2.Text), double.Parse(UserL1.Text), double.Parse(UserX2x1.Text), double.Parse(UserX2x2.Text));
 
                 await Navigation.PushModalAsync(new DfpScorePage(sCore));
             }

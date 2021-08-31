@@ -44,7 +44,7 @@
 
 	/* 4: PoastSuite.Android.dll */
 	/* uncompressed_file_size */
-	.word	196608
+	.word	197120
 	/* loaded */
 	.byte	0
 	/* data */
@@ -53,7 +53,7 @@
 
 	/* 5: PoastSuite.dll */
 	/* uncompressed_file_size */
-	.word	207872
+	.word	175104
 	/* loaded */
 	.byte	0
 	/* data */

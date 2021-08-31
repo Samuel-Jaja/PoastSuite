@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="PoastSuite.LoginPage">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Grid Margin="20,0,20,0" VerticalOptions="Center">
                 <Grid.RowDefinitions>
@@ -44,5 +45,6 @@
             <Label Text=" Project Work U2015 - © 2020 " HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" TextColor="Black" FontSize="12"/>
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

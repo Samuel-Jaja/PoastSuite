@@ -39,7 +39,7 @@
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
                     <!--<Label Margin="30,0,10,0" Text="Enter value of λ2" TextColor="Black"/>-->
-                    <Entry x:Name="UserL2" HorizontalOptions="FillAndExpand" Keyboard="Telephone"
+                    <Entry x:Name="UserL1" HorizontalOptions="FillAndExpand" Keyboard="Telephone"
                            FontSize="19" Placeholder="Enter value of λ2" HorizontalTextAlignment="Center"
                            TextColor="Black" Margin="40,0,40,0"></Entry>
                 </StackLayout>

@@ -1,6 +1,4 @@
-﻿
-
-using System;
+﻿using System;
 using PoastSuite.Question_1;
 using PoastSuite.Question_2;
 using PoastSuite.Question_3;

@@ -29,13 +29,13 @@ namespace PoastSuite
 
         private double GetGradePerEntry()  //remodify
         {
-            mark = Math.Round(100 / (7 * a), 4);//i used a to be able to get the exact no of iterations since arrays start counting from
+            mark = Math.Round(100 / (7 * a),4);//i used a to be able to get the exact no of iterations since arrays start counting from
                                                 //zero trying to kill two birds with one stone.
             return mark;
             
         }
 
-        public const double gradingTolerance = 0.01;
+        public const double gradingTolerance = 0.1;
         public double a; public double sCore = 0;
         public double[] arrayG1;
         public double[] arrayG2;
